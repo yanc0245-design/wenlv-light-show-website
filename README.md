@@ -16,7 +16,7 @@ python3 -m http.server 8000 --directory dist
 - `dist/assets/zhouzuling.jpg` 是所有者提供的周祖陵光影秀现场素材封面。清晰度受原始素材限制，未以生成图片冒充实拍。
 - 未添加未经证实的客户名称、评价、合作标志或业绩数字。
 - 商务电话、微信二维码与更多高清案例需要所有者补充。
-- 项目需求单在浏览器本地下载，不上传、不存储、不发送；当前没有线上咨询后台。
+- 项目沟通内容在浏览器本地生成并可复制，不上传、不存储、不发送；当前没有线上咨询后台。
 
 ## 目录
 
@@ -24,6 +24,6 @@ python3 -m http.server 8000 --directory dist
 - `docs/`：设计记录与后续内容事项。
 - `.openai/hosting.json`：Sites 托管配置（创建成功后写入）。
 
-## GitHub Pages 免费托管
+## 代码存储与正式国内托管
 
-仓库 Settings → Pages → Build and deployment 选择 GitHub Actions。仓库中的 Pages 工作流可手动触发，在 Pages 启用后部署 `dist/`。仅发布公开展示资料；不要向仓库提交密钥、客户私密资料或未获授权素材。
+正式面向大陆和微信的访问入口采用公司域名、中国大陆托管与 HTTPS，详见 `docs/mainland-wechat-launch.md`。GitHub 仅作为代码存储。原手动 Pages 工作流保留为可选技术工具，不能代替大陆访问验收。仅发布公开展示资料；不要向仓库提交密钥、客户私密资料或未获授权素材。
